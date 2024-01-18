@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="surveyForm">
+        <label for="q1">1. I worry about things.</label>
+        <select id="q1">
+            <option value="1">Very Inaccurate</option>
+            <option value="2">Inaccurate</option>
+            <option value="3">Neutral</option>
+            <option value="4">Accurate</option>
+            <option value="5">Very Accurate</option>
+        </select>
+
+        <label for="q2">2. I make friends easily.</label>
+        <select id="q2">
+            <option value="1">Very Inaccurate</option>
+            <option value="2">Inaccurate</option>
+            <option value="3">Neutral</option>
+            <option value="4">Accurate</option>
+            <option value="5">Very Accurate</option>
+        </select>
+
+        <label for="q3">3. I have a vivid imagination.</label>
+        <select id="q3">
+            <option value="1">Very Inaccurate</option>
+            <option value="2">Inaccurate</option>
+            <option value="3">Neutral</option>
+            <option value="4">Accurate</option>
+            <option value="5">Very Accurate</option>
+        </select>
+
+        <button type="button" onclick="submitSurvey()">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
