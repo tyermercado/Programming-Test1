@@ -1,9 +1,15 @@
+let surveyAnswers = {};
+
+function setAnswer(question, value) {
+    surveyAnswers[question] = value;
+}
+
 function submitSurvey() {
-    const answers = {
-        Q1: document.getElementById('q1').value,
-        Q2: document.getElementById('q2').value,
-        Q3: document.getElementById('q3').value
-    };
+    // Check if all questions have been answered
+    if (Object.keys(surveyAnswers).length !== 3) {
+        alert('Please answer all questions before submitting.');
+        return;
+    }
 
     // Send answers to the server
     fetch('/submit-survey', {
@@ -11,7 +17,7 @@ function submitSurvey() {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(answers),
+        body: JSON.stringify(surveyAnswers),
     })
     .then(response => response.json())
     .then(data => {

@@ -9,34 +9,34 @@
 <body>
     <h1>Survey Form</h1>
     <form id="surveyForm">
-        <label for="q1">1. I worry about things.</label>
-        <select id="q1">
-            <option value="1">Very Inaccurate</option>
-            <option value="2">Inaccurate</option>
-            <option value="3">Neutral</option>
-            <option value="4">Accurate</option>
-            <option value="5">Very Accurate</option>
-        </select>
+        <label>1. I worry about things.</label>
+        <div>
+            <button type="button" onclick="setAnswer('Q1', '1')">Very Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q1', '2')">Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q1', '3')">Neutral</button>
+            <button type="button" onclick="setAnswer('Q1', '4')">Accurate</button>
+            <button type="button" onclick="setAnswer('Q1', '5')">Very Accurate</button>
+        </div>
 
-        <label for="q2">2. I make friends easily.</label>
-        <select id="q2">
-            <option value="1">Very Inaccurate</option>
-            <option value="2">Inaccurate</option>
-            <option value="3">Neutral</option>
-            <option value="4">Accurate</option>
-            <option value="5">Very Accurate</option>
-        </select>
+        <label>2. I make friends easily.</label>
+        <div>
+            <button type="button" onclick="setAnswer('Q2', '1')">Very Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q2', '2')">Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q2', '3')">Neutral</button>
+            <button type="button" onclick="setAnswer('Q2', '4')">Accurate</button>
+            <button type="button" onclick="setAnswer('Q2', '5')">Very Accurate</button>
+        </div>
 
-        <label for="q3">3. I have a vivid imagination.</label>
-        <select id="q3">
-            <option value="1">Very Inaccurate</option>
-            <option value="2">Inaccurate</option>
-            <option value="3">Neutral</option>
-            <option value="4">Accurate</option>
-            <option value="5">Very Accurate</option>
-        </select>
+        <label>3. I have a vivid imagination.</label>
+        <div>
+            <button type="button" onclick="setAnswer('Q3', '1')">Very Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q3', '2')">Inaccurate</button>
+            <button type="button" onclick="setAnswer('Q3', '3')">Neutral</button>
+            <button type="button" onclick="setAnswer('Q3', '4')">Accurate</button>
+            <button type="button" onclick="setAnswer('Q3', '5')">Very Accurate</button>
+        </div>
 
-        <button type="button" onclick="submitSurvey()">Submit</button>
+        <button id="submit" type="button" onclick="submitSurvey()">Submit</button>
     </form>
 
     <script src="script.js"></script>
